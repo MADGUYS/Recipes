@@ -15,6 +15,7 @@
 		A305683F1A336F7F0089BF87 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A305683E1A336F7F0089BF87 /* Images.xcassets */; };
 		A30568421A336F7F0089BF87 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A30568401A336F7F0089BF87 /* LaunchScreen.xib */; };
 		A305684E1A336F7F0089BF87 /* RecipesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A305684D1A336F7F0089BF87 /* RecipesTests.m */; };
+		A30568591A3372470089BF87 /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A30568581A3372470089BF87 /* ThirdViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,8 @@
 		A30568471A336F7F0089BF87 /* RecipesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RecipesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A305684C1A336F7F0089BF87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A305684D1A336F7F0089BF87 /* RecipesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RecipesTests.m; sourceTree = "<group>"; };
+		A30568571A3372470089BF87 /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
+		A30568581A3372470089BF87 /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +93,8 @@
 				A30568361A336F7F0089BF87 /* FirstViewController.m */,
 				A30568381A336F7F0089BF87 /* SecondViewController.h */,
 				A30568391A336F7F0089BF87 /* SecondViewController.m */,
+				A30568571A3372470089BF87 /* ThirdViewController.h */,
+				A30568581A3372470089BF87 /* ThirdViewController.m */,
 				A305683B1A336F7F0089BF87 /* Main.storyboard */,
 				A305683E1A336F7F0089BF87 /* Images.xcassets */,
 				A30568401A336F7F0089BF87 /* LaunchScreen.xib */,
@@ -173,6 +178,7 @@
 				TargetAttributes = {
 					A305682A1A336F7F0089BF87 = {
 						CreatedOnToolsVersion = 6.0.1;
+						DevelopmentTeam = 86ZP92G4RM;
 					};
 					A30568461A336F7F0089BF87 = {
 						CreatedOnToolsVersion = 6.0.1;
@@ -225,6 +231,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A305683A1A336F7F0089BF87 /* SecondViewController.m in Sources */,
+				A30568591A3372470089BF87 /* ThirdViewController.m in Sources */,
 				A30568341A336F7F0089BF87 /* AppDelegate.m in Sources */,
 				A30568371A336F7F0089BF87 /* FirstViewController.m in Sources */,
 				A30568311A336F7F0089BF87 /* main.m in Sources */,
@@ -349,9 +356,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Recipes/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -359,9 +370,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Recipes/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
