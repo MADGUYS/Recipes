@@ -16,6 +16,8 @@
 		A30568421A336F7F0089BF87 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A30568401A336F7F0089BF87 /* LaunchScreen.xib */; };
 		A305684E1A336F7F0089BF87 /* RecipesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A305684D1A336F7F0089BF87 /* RecipesTests.m */; };
 		A30568591A3372470089BF87 /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A30568581A3372470089BF87 /* ThirdViewController.m */; };
+		A305685C1A33803B0089BF87 /* AddRecipeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A305685B1A33803B0089BF87 /* AddRecipeViewController.m */; };
+		A305685F1A3384780089BF87 /* UpdateRecipeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A305685E1A3384780089BF87 /* UpdateRecipeViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +48,10 @@
 		A305684D1A336F7F0089BF87 /* RecipesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RecipesTests.m; sourceTree = "<group>"; };
 		A30568571A3372470089BF87 /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
 		A30568581A3372470089BF87 /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
+		A305685A1A33803B0089BF87 /* AddRecipeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddRecipeViewController.h; sourceTree = "<group>"; };
+		A305685B1A33803B0089BF87 /* AddRecipeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddRecipeViewController.m; sourceTree = "<group>"; };
+		A305685D1A3384780089BF87 /* UpdateRecipeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UpdateRecipeViewController.h; sourceTree = "<group>"; };
+		A305685E1A3384780089BF87 /* UpdateRecipeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UpdateRecipeViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +101,10 @@
 				A30568391A336F7F0089BF87 /* SecondViewController.m */,
 				A30568571A3372470089BF87 /* ThirdViewController.h */,
 				A30568581A3372470089BF87 /* ThirdViewController.m */,
+				A305685A1A33803B0089BF87 /* AddRecipeViewController.h */,
+				A305685B1A33803B0089BF87 /* AddRecipeViewController.m */,
+				A305685D1A3384780089BF87 /* UpdateRecipeViewController.h */,
+				A305685E1A3384780089BF87 /* UpdateRecipeViewController.m */,
 				A305683B1A336F7F0089BF87 /* Main.storyboard */,
 				A305683E1A336F7F0089BF87 /* Images.xcassets */,
 				A30568401A336F7F0089BF87 /* LaunchScreen.xib */,
@@ -232,8 +242,10 @@
 			files = (
 				A305683A1A336F7F0089BF87 /* SecondViewController.m in Sources */,
 				A30568591A3372470089BF87 /* ThirdViewController.m in Sources */,
+				A305685C1A33803B0089BF87 /* AddRecipeViewController.m in Sources */,
 				A30568341A336F7F0089BF87 /* AppDelegate.m in Sources */,
 				A30568371A336F7F0089BF87 /* FirstViewController.m in Sources */,
+				A305685F1A3384780089BF87 /* UpdateRecipeViewController.m in Sources */,
 				A30568311A336F7F0089BF87 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -5,7 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
     </dependencies>
     <scenes>
-        <!--Own Recipes-->
+        <!--First View Controller-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
                 <viewController id="9pv-A4-QxB" customClass="FirstViewController" sceneMemberID="viewController">
@@ -39,11 +39,50 @@
                             <constraint firstAttribute="centerY" secondItem="KQZ-1w-vlD" secondAttribute="centerY" id="exm-UA-ej4"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Own Recipes" image="first" id="acW-dT-cKf"/>
+                    <navigationItem key="navigationItem" id="ju3-Gk-JlK">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="EkE-N8-eEP">
+                            <color key="tintColor" red="0.89448879079999999" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <segue destination="r7v-9b-rli" kind="presentation" id="pHc-di-2ao"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="750" y="-812"/>
+            <point key="canvasLocation" x="360" y="-1392"/>
+        </scene>
+        <!--Add Recipe View Controller-->
+        <scene sceneID="WXg-5s-Mvi">
+            <objects>
+                <viewController id="xOB-1E-bf4" customClass="AddRecipeViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="MhZ-PK-rlp"/>
+                        <viewControllerLayoutGuide type="bottom" id="hyX-1e-XkA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="at1-Gj-NJF">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="2CX-TC-OpQ">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="Fag-E7-O0q">
+                            <color key="tintColor" red="0.89448879079999999" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="cancelAction:" destination="xOB-1E-bf4" id="ZhG-dO-JzI"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="PPM-2Z-hx5">
+                            <color key="tintColor" red="0.89448879079999999" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="saveAction:" destination="xOB-1E-bf4" id="Blf-Id-YdX"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="399-wT-MMn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2020" y="-1386"/>
         </scene>
         <!--Recipes-->
         <scene sceneID="wg7-f3-ORb">
@@ -83,7 +122,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="750" y="-8"/>
+            <point key="canvasLocation" x="430" y="-40"/>
         </scene>
         <!--Third View Controller-->
         <scene sceneID="URb-EU-CZq">
@@ -123,7 +162,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2QT-d6-Ht9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="763" y="770"/>
+            <point key="canvasLocation" x="-348" y="730"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -136,14 +175,69 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
+                        <segue destination="HGt-Xo-R3E" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
                         <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
                         <segue destination="zDR-Y1-WEN" kind="relationship" relationship="viewControllers" id="cMJ-cx-h2y"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="0.0" y="0.0"/>
+            <point key="canvasLocation" x="-348" y="-40"/>
+        </scene>
+        <!--Own Recipes-->
+        <scene sceneID="z2A-Z2-83z">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="HGt-Xo-R3E" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Own Recipes" image="first" id="acW-dT-cKf"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="a4z-Kw-NQJ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="9pv-A4-QxB" kind="relationship" relationship="rootViewController" id="jzw-Wz-KNN"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yqV-WS-bMv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-396" y="-1392"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="mt6-Cs-Moq">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="r7v-9b-rli" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="sSc-7P-t6N">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="xOB-1E-bf4" kind="relationship" relationship="rootViewController" id="LU5-LT-5aa"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OCr-yo-TaB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1176" y="-1386"/>
+        </scene>
+        <!--Update Recipe View Controller-->
+        <scene sceneID="nVM-M2-hx9">
+            <objects>
+                <viewController id="t6q-te-4Yn" customClass="UpdateRecipeViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="XfP-PS-Y8A"/>
+                        <viewControllerLayoutGuide type="bottom" id="3W5-hP-TIN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QMM-yq-CeW">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xwM-eT-fGb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1200" y="-694"/>
         </scene>
     </scenes>
     <resources>
